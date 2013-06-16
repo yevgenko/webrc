@@ -2,6 +2,8 @@
 
 Concept of web based remote control for HTML5 video player
 
+![](http://img208.imageshack.us/img208/1580/d9j.png)
+
 ## Demo
 
 http://webrc.aws.af.cm/
