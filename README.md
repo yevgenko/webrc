@@ -6,6 +6,7 @@ Concept of web based remote control for HTML5 video player
 
 * [nodeJS][] v0.10 or greater
 * HTML5 compatible browser
+* Access to [Google Charts][] API, so, Internet is mandatory!
 
 ## Installation
 
@@ -25,6 +26,10 @@ Open in the browser on PC:
 
 Scan barcode with in your smartphone and open the URL in its browser.
 
+NOTE: barcode generated with external service, therefore might take a little
+longer to appear, please be patient :)
+
 Enjoy!
 
 [nodeJS]:http://nodejs.org/
+[Google Charts]:https://developers.google.com/chart/
