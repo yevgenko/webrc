@@ -1,6 +1,6 @@
 # WebRC Demo
 
-Concept of web based video controls for HTML5 video player
+Concept of web based remote control for HTML5 video player
 
 ## Requirements
 
