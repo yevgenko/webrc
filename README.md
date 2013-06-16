@@ -1,6 +1,10 @@
-# WebRC Demo
+# WebRC
 
 Concept of web based remote control for HTML5 video player
+
+## Demo
+
+http://webrc.aws.af.cm/
 
 ## Requirements
 
