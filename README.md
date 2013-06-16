@@ -6,6 +6,9 @@ Concept of web based remote control for HTML5 video player
 
 http://webrc.aws.af.cm/
 
+NOTE: barcode generated with external service, therefore might take a little
+longer to appear, please be patient :)
+
 ## Requirements
 
 * [nodeJS][] v0.10 or greater
