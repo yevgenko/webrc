@@ -4,8 +4,8 @@ Concept of web based remote control for HTML5 video player
 
 ## Requirements
 
-    [nodeJS][] v0.10 or greater
-    HTML5 compatible browser
+* [nodeJS][] v0.10 or greater
+* HTML5 compatible browser
 
 ## Installation
 
