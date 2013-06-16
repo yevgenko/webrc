@@ -1,0 +1,29 @@
+{
+  "name": "WebRC",
+  "version": "0.0.0",
+  "description": "Concept of web based remote control for HTML5 video player",
+  "main": "app.js",
+  "dependencies": {
+    "express": "~3.1.0",
+    "socket.io": "~0.9.13"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/yevgenko/webrc"
+  },
+  "keywords": [
+    "remote",
+    "control",
+    "socket.io"
+  ],
+  "author": "Yevgeniy A. Viktorov",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/yevgenko/webrc/issues"
+  }
+}

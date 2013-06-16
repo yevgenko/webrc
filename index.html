@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <title>Playback</title>
+
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+<video id="video1" poster="http://video-js.zencoder.com/oceans-clip.jpg" height="264" width="640">
+  <source src="http://video-js.zencoder.com/oceans-clip.mp4" type="video/mp4">
+  <source src="http://video-js.zencoder.com/oceans-clip.webm" type="video/webm">
+</video>
+<img id="qr_code" src="#" alt="" />
+<script type="text/javascript">
+  var socket = io.connect();
+  var video1 = document.getElementById('video1');
+  var qr_code = document.getElementById('qr_code');
+  var conName = Math.random().toString(36).substring(2);
+
+  socket.on('connect', function() {
+      socket.emit('connection name', conName, function(){
+          qr_code.src = "http://chart.apis.google.com/chart?cht=qr&chs=150x150&chl="+window.location+"rc?name="+conName;
+      });
+  });
+
+  socket.on('play/pause', function() {
+      if (video1.paused) {
+          video1.play();
+      } else {
+          video1.pause();
+      }
+  });
+
+  socket.on('forward', function() {
+      video1.currentTime+=5;
+  });
+
+  socket.on('backward', function() {
+      video1.currentTime-=5;
+  });
+
+  socket.on('volume up', function() {
+      video1.volume+=0.1;
+  });
+
+  socket.on('volume down', function() {
+      video1.volume-=0.1;
+  });
+</script>
+</body>
+</html>
